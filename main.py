@@ -41,11 +41,10 @@ class Potts:
 def main():
     m = Potts(8, 20, .1, 1)
     
-    for t in range(10_000):
+    for t in range(10_000): 
         print(str(m.lattice).replace(' [', '[[').replace(' ', ')]██[color(')
-                    .replace('[[', '[color(').replace(']]', ')]'))
-        for tt in range(100):
+                            .replace('[[', '[color(').replace(']]', ')]'))
+        for tt in range(100): 
             m.metropolis()
 
-if __name__ == '__main__':
-    main()
+if __name__ == '__main__': main()
